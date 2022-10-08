@@ -6,12 +6,13 @@ public class fibonacci
     {
         int numero = 1, i, limite;
         int numero1 = 0;
-        int soma = 0;
+        int soma = 1;
         
         Console.WriteLine("digite numero");
         limite = int.Parse(Console.ReadLine());
         
-        for(i = 1; i <= limite; i++)
+        Console.WriteLine($"{soma}");
+        for(i = 1; i <= (limite - 1); i++)
         {
           soma = numero + numero1;
           numero1 = numero;
